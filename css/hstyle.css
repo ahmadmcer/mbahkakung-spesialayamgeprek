@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+.bg{
+    position: absolute;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.vmty{
+    grid-column: 1 / span 2;
+}
+
+.vmpt{
+    grid-column: 3 ;
+}
+
+.vms{
+    font-family: 'Poppins', sans-serif;
+    color: #ffa825;
+}
+.hm{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hm2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.jvm{
+    font-family: 'Poppins', sans-serif;
+    color: #ffa825;
+}
+.tvm{
+    font-family: 'Poppins', sans-serif;
+    color: #ffa825;
+}
+
