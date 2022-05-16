@@ -38,6 +38,8 @@ body {
     padding: 19% 0;
 }
 
+
+
 .home-title {
     color: #fff511;
     font-size: 64pt;
@@ -76,6 +78,7 @@ body {
     border-radius: 32px;
 }
 
+/* Fasilitas */
 #fasilitas-mbah {
     color: #ffa825;
     
@@ -113,11 +116,136 @@ body {
     font-size: x-large;
 }
 
+/* About us */
+
+.about-us-title {
+    color: #fff511;
+    font-size: 64pt;
+    font-weight: 800;
+}
+
+#about-us{
+    text-align: center;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    background-image: url("../image/about_us.jpg");
+    background-size: 100%;
+    padding: 20% 0;
+}
+
+#tentang-mbah {
+    color: #ffa825;
+    font-weight: 700;
+    padding-bottom: 5em;
+}
+
+.tentang-mbah-title{
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.tentang-mbah-text{
+    padding-bottom: 2em;
+    text-align: justify;
+    font-size: large;
+}
+
+.tentang-mbah-image{
+    width: 75%;
+    border-radius: 32px;
+    padding-left: 10em;
+}
+
+
+/* Profile */
+#navbar-profile {
+    background-color: #ffa825;
+    box-shadow: none;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+#profile{
+    padding-top: 10em;
+}
+
+.judul-profile{
+    color: #ffa825;
+    font-weight: 700;
+    padding-bottom: 2em;
+}
+
+.profile-text{
+    color: #ffa825;
+    font-size: x-large;
+}
+
+.owner-image{
+    width: 50%;
+    border-radius: 32px;
+    text-align: right;
+    margin-left: 15em;
+}
+
+/* Contact */
+#navbar-contact {
+    background-color: #ffa825;
+    box-shadow: none;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+#contact {
+    text-align: center;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    background-image: url("../image/kasir.jpg");
+    background-size: 100%;
+    padding: 10% 0;
+    margin: auto;
+}
+
+.contact-title {
+    color: #fff511;
+    font-size: 64pt;
+    font-weight: 800;
+}
+
+.contact-subtitle {
+    color: white;
+    font-size: 32pt;
+    font-weight: 600;
+}
+
+#grabfood{
+    padding-bottom: 2em;
+}
+
+#embed-map{
+    padding-top: 1em;
+}
+
+#keterangan-contact{
+    padding-bottom: 2em;
+}
+
+.list-contact{
+    color: #ffa825;
+    font-weight: 700;
+}
+
+.list-contact-content{
+    color: #ffa825;
+    font-size: large;
+}
+
+
 /* FOOTER */
 footer p {
+    position: fixed;
     text-align: center;
     color: #ffa825;
     font-weight: 600;
+    width: 100%;
+    bottom: 0;
 }
 
 .grid-container{
