@@ -1,0 +1,64 @@
+/* IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+/* CONSTRUCTOR */
+*, *::after, *::before {
+    outline: 1px solid red;
+}
+
+/* GENERAL */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.bg-mbahkakung-primary {
+    background-color: #ffa825;
+}
+
+/* HOME */
+#home {
+    text-align: center;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    background-image: url("../image/home.jpg");
+    background-size: 100%;
+    padding: 19% 0;
+}
+
+.home-title {
+    color: #fff511;
+    font-size: 64pt;
+    font-weight: 800;
+}
+
+.home-subtitle {
+    color: white;
+    font-size: 32pt;
+    font-weight: 600;
+}
+
+.home-btn {
+    border: 2px solid white;
+    border-radius: 16px;
+}
+
+/* VISI MISI */
+#visi-misi {
+    color: #ffa825;
+    font-weight: 700;
+}
+
+.visi-misi-title, .visi-title, .misi-title, #visi-misi p {
+    font-weight: 700;
+}
+
+.visi-misi-image {
+    width: 100%;
+    border-radius: 32px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
