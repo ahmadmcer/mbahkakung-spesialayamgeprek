@@ -120,6 +120,10 @@ body {
     font-size: x-large;
 }
 
+#fasilitas-lainnya-akhir{
+    padding-bottom: 2em;
+}
+
 /* About us */
 
 .about-us-title {
@@ -154,7 +158,7 @@ body {
 }
 
 .tentang-mbah-image{
-    width: 75%;
+    width: 100%;
     border-radius: 32px;
     padding-left: 10em;
 }
@@ -184,7 +188,7 @@ body {
 }
 
 .owner-image{
-    width: 50%;
+    width: 70%;
     border-radius: 32px;
     text-align: right;
     margin-left: 15em;
