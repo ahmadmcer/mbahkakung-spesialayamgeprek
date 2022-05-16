@@ -29,6 +29,10 @@ body {
     background-color: #fff511;
 }
 
+#logo{
+    width: 50%;
+}
+
 /* HOME */
 #home {
     text-align: center;
