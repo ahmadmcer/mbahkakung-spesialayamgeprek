@@ -51,8 +51,14 @@ body {
 }
 
 .home-btn {
-    border: 2px solid white;
-    border-radius: 16px;
+    padding: 0.5rem 2rem;
+    border: 4px solid white;
+    border-radius: 32px;
+}
+
+.home-btn:hover {
+    background-color: #fff511;
+    border-color: #fff511;
 }
 
 /* VISI MISI */
