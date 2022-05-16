@@ -3,7 +3,7 @@
 
 /* CONSTRUCTOR */
 *, *::after, *::before {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 /* GENERAL */
@@ -14,6 +14,10 @@ body {
 /* NAVBAR */
 .bg-mbahkakung-primary {
     background-color: #ffa825;
+}
+
+ul{
+    font-family: 'Poppins', sans-serif;
 }
 
 /* HOME */
@@ -55,6 +59,43 @@ body {
 .visi-misi-image {
     width: 100%;
     border-radius: 32px;
+}
+
+#fasilitas-mbah {
+    color: #ffa825;
+    
+}
+
+.fasilitas-lainnya{
+    color: #ffa825;
+    font-weight: 700;
+}
+
+.fasilitas-mbah-title{
+    font-weight: 700;
+}
+
+.fasilitas-mbah-img{
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 25%; 
+    height: 300px;
+    border-radius: 32px;
+    padding-bottom: 10px;
+}
+
+
+.nama-fasilitas{
+    text-align: center;
+    color: #ffa825;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+
+#list-fasilitas-lainnya{
+    color: #ffa825;
+    font-size: x-large;
 }
 
 .grid-container{
