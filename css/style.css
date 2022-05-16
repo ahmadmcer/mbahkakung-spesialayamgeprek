@@ -12,12 +12,21 @@ body {
 }
 
 /* NAVBAR */
-.bg-mbahkakung-primary {
-    background-color: #ffa825;
+.navbar {
+    background-color: transparent;
+    box-shadow: none;
 }
 
-ul{
-    font-family: 'Poppins', sans-serif;
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding: .5rem 2rem;
+    margin: 0 1rem;
+    border-radius: 32px;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #fff511;
 }
 
 /* HOME */
@@ -90,12 +99,19 @@ ul{
     color: #ffa825;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: large;
+    font-size: 18pt;
 }
 
 #list-fasilitas-lainnya{
     color: #ffa825;
     font-size: x-large;
+}
+
+/* FOOTER */
+footer p {
+    text-align: center;
+    color: #ffa825;
+    font-weight: 600;
 }
 
 .grid-container{
