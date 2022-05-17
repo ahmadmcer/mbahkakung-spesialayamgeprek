@@ -258,6 +258,10 @@ footer p {
     bottom: 0;
 }
 
+#footer-profile{
+    padding-top: 5em;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: auto auto;
