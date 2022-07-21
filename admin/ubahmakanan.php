@@ -1,6 +1,8 @@
 <?php
-require ('config.php');
-$makanan = mysqli_query($connection, "Select * FROM food");
+include('config.php');
+$id = $_GET['id'];
+$query = mysqli_query($connection, "SELECT * FROM food WHERE id ='$id'");
+$baris = mysqli_fetch_array($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +43,7 @@ $makanan = mysqli_query($connection, "Select * FROM food");
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <li class="nav-item menu-open">
+          <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
@@ -81,7 +83,7 @@ $makanan = mysqli_query($connection, "Select * FROM food");
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Daftar Makanan</h1>
+            <h1 class="m-0">Tambah Makanan</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -91,41 +93,48 @@ $makanan = mysqli_query($connection, "Select * FROM food");
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-      <div class="card-body table-responsive p-0">
-          <table class="table table-hover text-nowrap">
-            <thead>
-              <tr>
-                <th>Nomor</th>
-                <th>Nama</th>
-                <th>Harga</th>
-                <th>Keterangan</th>
-                <th>Aksi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <?php $i = 1;?>
-              <?php foreach ($makanan as $baris) : ?>
-                <tr>
-                  <td><?= $i; ?></td>
-                  <td><?= $baris["name"];?> </td>
-                  <td><?= $baris["price"];?> </td>
-                  <td><?= $baris["description"];?> </td>
-                  <td>
-                    <a href="ubahmakanan.php?id=<?php echo$baris["id"];?>"><button type="button" class="btn btn-block btn-info btn-sm">Ubah</button></a>
-                    <button type="button" class="btn btn-block btn-outline-danger btn-sm">Hapus</button>
-                  </td>   
-                </tr>
-              <?php $i++; ?>
-              <?php endforeach; ?>
-            </tbody>
-          </table>
-            <a href="tambahmakanan.php">  
-              <button type="button" class="btn btn-block bg-gradient-success">Tambah Makanan</button>
-            </a>
-        </div>
+      <form action="ubahmakanan.php" method="post">
+        <input type="hidden" value="<?php echo $baris['id'];?>" name="id">
+            <div class="form-group">
+                <label>Nama Makanan</label>
+                <input type="text" class="form-control" name="name" placeholder="Masukkan Nama Makanan" value="<?php echo $baris['name'];?>">
+            </div>
+            <div class="form-group">
+                <label>Harga</label>
+                <input type="number" class="form-control" name="price" placeholder="Masukkan Harga" value="<?php echo $baris['price'];?>">
+            </div>
+            <div class="form-group">
+                <label>Keterangan</label>
+                <textarea type="text" class="form-control" rows="3" name="description" placeholder="Masukkan Keterangan Makanan"><?php echo $baris['description'];?></textarea>
+            </div>
+            <div>
+                <button type="submit" name="Submit" value="edit" class="btn btn-primary">Submit</button>
+            </div>
+      </form>
       </div><!-- /.container-fluid -->
     </div> <!-- /.content -->
   </div><!-- /.content-wrapper -->
+
+  <?php
+    
+    // include database connection file
+    // include_once("config.php");
+    // Check If form submitted, insert form data into users table.
+    if(isset($_POST['Submit'])) {
+        $id = $_POST['id'];
+        $name = $_POST['name'];
+        $price = $_POST['price'];
+        $description = $_POST['description'];
+        $query = mysqli_query($connection, "SELECT * FROM food WHERE id='$id'");
+	      $baris = mysqli_fetch_array($query);
+    
+        // Insert user data into table
+        $result = mysqli_query($connection, "UPDATE food SET name='$name', price='$price', description='$description' WHERE id=$id");
+
+        // memberikan allert
+        echo "<script>window.location.href='makanan.php'</script>";
+    } 
+    ?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

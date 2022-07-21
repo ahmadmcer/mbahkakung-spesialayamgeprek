@@ -47,7 +47,7 @@
             </a>
             <ul class="nav nav-treeview">
             <li class="nav-item">
-                <a href="admin.php" class="nav-link active">
+                <a href="admin.php" class="nav-link">
                   <p>Daftar Menu</p>
                 </a>
               </li>
@@ -57,7 +57,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="minuman.php" class="nav-link">
+                <a href="minuman.php" class="nav-link active">
                   <p>Minuman</p>
                 </a>
               </li>
@@ -123,7 +123,6 @@
     }
 
     // memberikan allert
-    echo "<script>alert('Makanan Berhasil Ditambahkan!')</script>";
     ?>
 
   <!-- Control Sidebar -->
