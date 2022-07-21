@@ -195,6 +195,20 @@ body {
     margin-left: 15em;
 }
 
+/* Daftar Makanan */
+.card {
+    border-radius: 25px;
+    padding: 20px;
+    width: 200px;
+    /* height: 380px; */
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 157px;
+    object-fit: cover;
+}
+
 /* Contact */
 #navbar-contact {
     background-color: #ffa825;
