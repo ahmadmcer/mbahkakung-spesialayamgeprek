@@ -22,11 +22,7 @@ $baris = mysqli_fetch_array($query);
 <div class="wrapper">
 
   <!-- Main Sidebar Container -->
-<<<<<<< Updated upstream
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-=======
   <aside class="main-sidebar sidebar-dark-warning elevation-4">
->>>>>>> Stashed changes
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="../image/LogoMbahkakung.png" alt="AdminLTE Logo" class="brand-image img-circle" style="opacity: .8">
