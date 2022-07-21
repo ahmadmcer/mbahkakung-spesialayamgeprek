@@ -20,7 +20,7 @@ $makanan = mysqli_query($connection, "Select * FROM food");
 <div class="wrapper">
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-warning elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="../image/LogoMbahkakung.png" alt="AdminLTE Logo" class="brand-image img-circle" style="opacity: .8">
@@ -111,7 +111,11 @@ $makanan = mysqli_query($connection, "Select * FROM food");
                   <td><?= $baris["price"];?> </td>
                   <td><?= $baris["description"];?> </td>
                   <td>
+<<<<<<< Updated upstream
                     <a href="ubahmakanan.php?id=<?php echo$baris["id"];?>"><button type="button" class="btn btn-block btn-info btn-sm">Ubah</button></a>
+=======
+                    <a href="ubahmakanan.php?id=<?php echo $baris['id'];?>"><button type="button" class="btn btn-block btn-info btn-sm">Ubah</button></a>
+>>>>>>> Stashed changes
                     <button type="button" class="btn btn-block btn-outline-danger btn-sm">Hapus</button>
                   </td>   
                 </tr>
@@ -120,7 +124,7 @@ $makanan = mysqli_query($connection, "Select * FROM food");
             </tbody>
           </table>
             <a href="tambahmakanan.php">  
-              <button type="button" class="btn btn-block bg-gradient-success">Tambah Makanan</button>
+              <button type="button" class="btn btn-block bg-gradient-warning">Tambah Makanan</button>
             </a>
         </div>
       </div><!-- /.container-fluid -->

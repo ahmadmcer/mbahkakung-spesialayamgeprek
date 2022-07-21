@@ -20,7 +20,7 @@ $minuman = mysqli_query($connection,"Select * FROM beverages");
 <div class="wrapper">
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-warning elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="../image/LogoMbahkakung.png" alt="AdminLTE Logo" class="brand-image img-circle" style="opacity: .8">
@@ -110,7 +110,11 @@ $minuman = mysqli_query($connection,"Select * FROM beverages");
                   <td><?= $baris["price"];?> </td>
                   <td><?= $baris["description"];?> </td>
                   <td>
+<<<<<<< Updated upstream
                     <a href="ubahminuman.php?id=<?php echo$baris["id"];?>"><button type="button" class="btn btn-block btn-info btn-sm">Ubah</button></a>
+=======
+                    <a href="ubahminuman.php?id=<?php echo $baris['id'];?>"><button type="button" class="btn btn-block btn-info btn-sm">Ubah</button></a>
+>>>>>>> Stashed changes
                     <button type="button" class="btn btn-block btn-outline-danger btn-sm">Hapus</button>
                   </td>
                 </tr>
@@ -119,7 +123,7 @@ $minuman = mysqli_query($connection,"Select * FROM beverages");
             </tbody>
           </table>
             <a href="tambahminuman.php">  
-              <button type="button" class="btn btn-block bg-gradient-success">Tambah Minuman</button>
+              <button type="button" class="btn btn-block bg-gradient-warning">Tambah Minuman</button>
             </a>
         </div>
       </div><!-- /.container-fluid -->
