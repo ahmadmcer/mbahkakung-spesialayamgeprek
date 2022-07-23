@@ -111,7 +111,7 @@ $minuman = mysqli_query($connection,"Select * FROM beverages");
                   <td><?= $baris["description"];?> </td>
                   <td>
                     <a href="ubahminuman.php?id=<?php echo $baris['id'];?>"><button type="button" class="btn btn-block btn-info btn-sm">Ubah</button></a>
-                    <button type="button" class="btn btn-block btn-outline-danger btn-sm">Hapus</button>
+                    <a href="hapusminuman.php?id=<?php echo $baris['id'];?>"><button type="button" class="btn btn-block btn-outline-danger btn-sm">Hapus</button></a>
                   </td>
                 </tr>
               <?php $i++; ?>
