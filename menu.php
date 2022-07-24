@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +49,7 @@
                             <a class="nav-link" href="profile.html">PROFILE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="menu.html">DAFTAR MENU</a>
+                            <a class="nav-link active" aria-current="page" href="menu.php">DAFTAR MENU</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="contact.html">CONTACT</a>
@@ -140,8 +143,9 @@
                         <div class="card" style="width: 18rem;">
                             <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Es Teh</h5>
+                                <h5 class="card-title">Es/Panas Teh Manis</h5>
                                 <p class="card-text">Teh yang didinginkan dengan Es Batu</p>
+                                <b class="card-text">Rp 3000</b><br><br>
                                 <a href="#" class="btn btn-primary">Pesan</a>
                             </div>
                         </div>
@@ -150,8 +154,9 @@
                         <div class="card" style="width: 18rem;">
                             <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Es Teh</h5>
+                                <h5 class="card-title">Es/Panas Teh Tawar</h5>
                                 <p class="card-text">Teh yang didinginkan dengan Es Batu</p>
+                                <b class="card-text">Rp 1.500</b><br><br>
                                 <a href="#" class="btn btn-primary">Pesan</a>
                             </div>
                         </div>
@@ -160,8 +165,9 @@
                         <div class="card" style="width: 18rem;">
                             <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Es Teh</h5>
-                                <p class="card-text">Teh yang didinginkan dengan Es Batu</p>
+                                <h5 class="card-title">Es/Panas Jeruk</h5>
+                                <p class="card-text">Minuman jeruk peras, yang diperas langsung</p>
+                                <b class="card-text">Rp 4000</b><br><br>
                                 <a href="#" class="btn btn-primary">Pesan</a>
                             </div>
                         </div>
@@ -170,8 +176,9 @@
                         <div class="card" style="width: 18rem;">
                             <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Es Teh</h5>
-                                <p class="card-text">Teh yang didinginkan dengan Es Batu</p>
+                                <h5 class="card-title">Es/Panas Lemon Tea</h5>
+                                <p class="card-text">Teh yang dicampur dengan perisa Lemon yang segar</p>
+                                <b class="card-text">Rp 5000</b><br><br>
                                 <a href="#" class="btn btn-primary">Pesan</a>
                             </div>
                         </div>
@@ -180,8 +187,9 @@
                         <div class="card" style="width: 18rem;">
                             <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Es Teh</h5>
-                                <p class="card-text">Teh yang didinginkan dengan Es Batu</p>
+                                <h5 class="card-title">Es/Panas Air Putih</h5>
+                                <p class="card-text">Air putih biasa, yang bening dan menyegarkan dan menghilangkan dahaga</p>
+                                <b class="card-text">Rp 1000</b><br><br>
                                 <a href="#" class="btn btn-primary">Pesan</a>
                             </div>
                         </div>
@@ -190,8 +198,53 @@
                         <div class="card" style="width: 18rem;">
                             <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Es Teh</h5>
-                                <p class="card-text">Teh yang didinginkan dengan Es Batu</p>
+                                <h5 class="card-title">Es/Panas Kopi</h5>
+                                <p class="card-text">Kopi yang dibuat secara langsung, dengan biji kopi pilihan</p>
+                                <b class="card-text">Rp 4000</b><br><br>
+                                <a href="#" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Jus Jeruk</h5>
+                                <p class="card-text">Jeruk pilihan yang langsung diblender, yang menyisakan bulir bulir</p>
+                                <b class="card-text">Rp 8000</b><br><br>
+                                <a href="#" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Jus Jambu</h5>
+                                <p class="card-text">Jambu pilihan yang langsung dibuat, ditambah dengan susu</p>
+                                <b class="card-text">Rp 8000</b><br><br>
+                                <a href="#" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Jus Melon</h5>
+                                <p class="card-text">Menggunakan melon pilihan yang segar, agar dinikmati lebih mantap</p>
+                                <b class="card-text">Rp 8000</b><br><br>
+                                <a href="#" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">EJus Strawberry</h5>
+                                <p class="card-text">Menggunakan strawberry pilihan yang segar, dan nikmat yang memiliki asam dan manis</p>
+                                <b class="card-text">Rp 8000</b><br><br>
                                 <a href="#" class="btn btn-primary">Pesan</a>
                             </div>
                         </div>
