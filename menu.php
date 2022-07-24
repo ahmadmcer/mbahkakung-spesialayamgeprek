@@ -1,5 +1,7 @@
 <?php
-
+require ('admin/config.php');
+$minuman = mysqli_query($connection, "Select * FROM beverages");
+$makanan = mysqli_query($connection, "Select * FROM food");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,66 +71,20 @@
                 </div>
                 <!-- Card Box -->
                 <div class="row">
+                <?php $i = 1;?>
+                    <?php foreach ($makanan as $barismakanan) : ?>
                     <div class="col">
                         <div class="card" style="width: 18rem;">
-                            <img src="image/geprek.jpg" alt="Card image cap" class="card-img-top">
+                            <img src="image/<?= $barismakanan["picture"];?>" alt="Card image cap" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Ayam Geprek</h5>
-                                <p class="card-text">Makanan Ayam Goreng Tepung, yang diulek bersama dengan sambal</p>
-                                <a href="#" class="btn btn-primary">Pesan</a>
+                                <h4 class="card-title"><b><?= $barismakanan["name"];?></b></h4>
+                                <p class="card-text">Rp<?= $barismakanan["price"];?></p>
+                                <p class="card-text"><?= $barismakanan["description"];?></p><br><br>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/geprek.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Ayam Geprek</h5>
-                                <p class="card-text">Makanan Ayam Goreng Tepung, yang diulek bersama dengan sambal</p>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/geprek.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Ayam Geprek</h5>
-                                <p class="card-text">Makanan Ayam Goreng Tepung, yang diulek bersama dengan sambal</p>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/geprek.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Ayam Geprek</h5>
-                                <p class="card-text">Makanan Ayam Goreng Tepung, yang diulek bersama dengan sambal</p>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/geprek.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Ayam Geprek</h5>
-                                <p class="card-text">Makanan Ayam Goreng Tepung, yang diulek bersama dengan sambal</p>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/geprek.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Ayam Geprek</h5>
-                                <p class="card-text">Makanan Ayam Goreng Tepung, yang diulek bersama dengan sambal</p>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php $i++; ?>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
@@ -139,116 +95,20 @@
                 </div>
                 <!-- Card Box -->
                 <div class="row">
+                    <?php $i = 1;?>
+                    <?php foreach ($minuman as $barisminuman) : ?>
                     <div class="col">
                         <div class="card" style="width: 18rem;">
-                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
+                            <img src="image/<?= $barisminuman["picture"];?>" alt="Card image cap" class="card-img-top">
                             <div class="card-body">
-                                <h5 class="card-title">Es/Panas Teh Manis</h5>
-                                <p class="card-text">Teh yang didinginkan dengan Es Batu</p>
-                                <b class="card-text">Rp 3000</b><br><br>
-                                <a href="#" class="btn btn-primary">Pesan</a>
+                                <h4 class="card-title"><b><?= $barisminuman["name"];?></b></h4>
+                                <p class="card-text">Rp<?= $barisminuman["price"];?></p>
+                                <p class="card-text"><?= $barisminuman["description"];?></p><br><br>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Es/Panas Teh Tawar</h5>
-                                <p class="card-text">Teh yang didinginkan dengan Es Batu</p>
-                                <b class="card-text">Rp 1.500</b><br><br>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Es/Panas Jeruk</h5>
-                                <p class="card-text">Minuman jeruk peras, yang diperas langsung</p>
-                                <b class="card-text">Rp 4000</b><br><br>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Es/Panas Lemon Tea</h5>
-                                <p class="card-text">Teh yang dicampur dengan perisa Lemon yang segar</p>
-                                <b class="card-text">Rp 5000</b><br><br>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Es/Panas Air Putih</h5>
-                                <p class="card-text">Air putih biasa, yang bening dan menyegarkan dan menghilangkan dahaga</p>
-                                <b class="card-text">Rp 1000</b><br><br>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Es/Panas Kopi</h5>
-                                <p class="card-text">Kopi yang dibuat secara langsung, dengan biji kopi pilihan</p>
-                                <b class="card-text">Rp 4000</b><br><br>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Jus Jeruk</h5>
-                                <p class="card-text">Jeruk pilihan yang langsung diblender, yang menyisakan bulir bulir</p>
-                                <b class="card-text">Rp 8000</b><br><br>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Jus Jambu</h5>
-                                <p class="card-text">Jambu pilihan yang langsung dibuat, ditambah dengan susu</p>
-                                <b class="card-text">Rp 8000</b><br><br>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Jus Melon</h5>
-                                <p class="card-text">Menggunakan melon pilihan yang segar, agar dinikmati lebih mantap</p>
-                                <b class="card-text">Rp 8000</b><br><br>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/teh.jpg" alt="Card image cap" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">EJus Strawberry</h5>
-                                <p class="card-text">Menggunakan strawberry pilihan yang segar, dan nikmat yang memiliki asam dan manis</p>
-                                <b class="card-text">Rp 8000</b><br><br>
-                                <a href="#" class="btn btn-primary">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php $i++; ?>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>

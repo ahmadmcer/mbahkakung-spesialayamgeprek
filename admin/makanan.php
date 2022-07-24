@@ -96,6 +96,7 @@ $makanan = mysqli_query($connection, "Select * FROM food");
             <thead>
               <tr>
                 <th>Nomor</th>
+                <th>Gambar</th>
                 <th>Nama</th>
                 <th>Harga</th>
                 <th>Keterangan</th>
@@ -107,6 +108,7 @@ $makanan = mysqli_query($connection, "Select * FROM food");
               <?php foreach ($makanan as $baris) : ?>
                 <tr>
                   <td><?= $i; ?></td>
+                  <td><img src="../image/<?= $baris["picture"];?>" alt=""></td>
                   <td><?= $baris["name"];?> </td>
                   <td><?= $baris["price"];?> </td>
                   <td><?= $baris["description"];?> </td>

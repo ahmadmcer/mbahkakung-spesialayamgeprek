@@ -93,7 +93,7 @@ $baris = mysqli_fetch_array($query);
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-      <form action="ubahminuman.php" method="post" >
+      <form action="ubahminuman.php" method="post" enctype="multipart/form-data">
         <input type="hidden" value="<?php echo $baris['id'];?>" name="id">
             <div class="form-group">
                 <label>Nama Minuman</label>
@@ -106,6 +106,15 @@ $baris = mysqli_fetch_array($query);
             <div class="form-group">
                 <label>Keterangan</label>
                 <textarea type="text" class="form-control" rows="3" name="description" placeholder="Masukkan Keterangan Minuman"><?php echo $baris['description'];?></textarea>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="picture" id="exampleInputFile">
+                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                  </div>
+                </div>
             </div>
             <div>
                 <button type="submit" name="Submit" value="Add" class="btn btn-primary">Submit</button>
@@ -122,6 +131,10 @@ $baris = mysqli_fetch_array($query);
     // Check If form submitted, insert form data into users table.
     if(isset($_POST['Submit'])) {
         $id = $_POST['id'];
+        $picture = $_FILES['picture']['name'];
+        $tmp_name = $_FILES['picture']['tmp_name'];
+        $path = "../image/".$picture;
+        move_uploaded_file($tmp_name, $path);
         $name = $_POST['name'];
         $price = $_POST['price'];
         $description = $_POST['description'];
@@ -129,7 +142,7 @@ $baris = mysqli_fetch_array($query);
 	      $baris = mysqli_fetch_array($query);
 
         // Insert user data into table
-        $result = mysqli_query($connection, "UPDATE beverages SET name='$name', price='$price', description='$description' WHERE id=$id");
+        $result = mysqli_query($connection, "UPDATE beverages SET picture='$picture', name='$name', price='$price', description='$description' WHERE id=$id");
         
         // memberikan allert
         echo "<script>window.location.href='minuman.php'</script>";

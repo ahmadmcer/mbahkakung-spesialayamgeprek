@@ -87,7 +87,7 @@
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-      <form action="tambahminuman.php" method="post" >
+      <form action="tambahminuman.php" method="post" enctype="multipart/form-data" >
             <div class="form-group">
                 <label>Nama Minuman</label>
                 <input type="text" class="form-control" name="name" placeholder="Masukkan Nama Minuman">
@@ -99,6 +99,15 @@
             <div class="form-group">
                 <label>Keterangan</label>
                 <textarea type="text" class="form-control" rows="3" name="description" placeholder="Masukkan Keterangan Minuman"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="picture" id="exampleInputFile">
+                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                  </div>
+                </div>
             </div>
             <div>
                 <button type="submit" name="Submit" value="Add" class="btn btn-primary">Submit</button>
@@ -114,15 +123,20 @@
     include_once("config.php");
     // Check If form submitted, insert form data into users table.
     if(isset($_POST['Submit'])) {
+        $picture = $_FILES['picture']['name'];
+        $tmp_name = $_FILES['picture']['tmp_name'];
+        $path = "../image/".$picture;
+        move_uploaded_file($tmp_name, $path);
         $name = $_POST['name'];
         $price = $_POST['price'];
         $description = $_POST['description'];
     
         // Insert user data into table
-        $result = mysqli_query($connection, "INSERT INTO beverages VALUES('','$name','$price','$description')");
-    }
+        $result = mysqli_query($connection, "INSERT INTO beverages VALUES('','$picture','$name','$price','$description')");
 
-    // memberikan allert
+        // memberikan allert
+      echo "<script>alert('Makanan Berhasil Ditambahkan!')</script>";
+      } 
     ?>
 
   <!-- Control Sidebar -->
