@@ -79,13 +79,16 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h1 class="visi-misi-title py-4">Sejarah<br>Mbah Kakung</h1><br>
-                    <h5 class="desc-sejarah" align="justify">
-                        Asal mula Mbah Kakung ini adalah, pertama kali didirikan
-                        untuk mengenang Almarhum dari Bapak Owner sendiri. Kemudian,
-                        termotivasi dalam merintis sebuah tempat makan, yang murah dan
-                        memiliki cita rasa identik dengan jogja. Kemudian, kita buat
-                        menu paket dan merelease slogan yaitu <h4 class="visi-title">Mantab, Murah, Kenyang dan Puas</h4> 
-                    </h5>
+                    <div class="desc-sejarah">
+                        <h5 align="justify">
+                            Asal mula Mbah Kakung ini adalah, pertama kali didirikan
+                            untuk mengenang Almarhum dari Bapak Owner sendiri. Kemudian,
+                            termotivasi dalam merintis sebuah tempat makan, yang murah dan
+                            memiliki cita rasa identik dengan jogja. Kemudian, kita buat
+                            menu paket dan merelease slogan yaitu :
+                            <h5 class="visi-title">"Mantab, Murah, Kenyang dan Puas"</h4> 
+                        </h5>
+                    </div>
                 </div>
                 <div class="col-sm-6 py-4">
                     <img src="image/chvmresized.jpg" class="visi-misi-image" alt="">

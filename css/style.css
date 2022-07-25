@@ -83,6 +83,12 @@ body {
     border-radius: 32px;
 }
 
+/* Desc Sejarah */
+
+.desc-sejarah {
+    padding-right: 100px
+}
+
 /* Fasilitas */
 #fasilitas-mbah {
     color: #ffa825;
