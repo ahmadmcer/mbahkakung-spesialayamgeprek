@@ -37,19 +37,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link"  href="index.html">HOME</a>
+                            <a class="nav-link"  href="index.php">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="about-us.html">ABOUT US</a>
+                            <a class="nav-link active" aria-current="page" href="about-us.php">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="profile.html">PROFILE</a>
+                            <a class="nav-link " href="profile.php">PROFILE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="menu.php">DAFTAR MENU</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="contact.html">CONTACT</a>
+                            <a class="nav-link " href="contact.php">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -93,8 +93,10 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; Mbah Kakung, All Right Reserved 2022</p>
+    <footer class="footer">
+        <div class="container text-center py-3">
+            <span class="text-muted">&copy; Mbah Kakung, All Right Reserved 2022</span>
+        </div>
     </footer>
 
     <!-- BOOTSTRAP BUNDLE JS -->

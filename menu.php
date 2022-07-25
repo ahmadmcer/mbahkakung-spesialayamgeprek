@@ -112,6 +112,11 @@ $makanan = mysqli_query($connection, "Select * FROM food");
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="container text-center py-3">
+                <span class="text-muted">&copy; Mbah Kakung, All Right Reserved 2022</span>
+            </div>
+        </footer>
     </main>
 </body>
 </html>

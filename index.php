@@ -41,19 +41,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">ABOUT US</a>
+                            <a class="nav-link" href="about-us.php">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="profile.html">PROFILE</a>
+                            <a class="nav-link " href="profile.php">PROFILE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="menu.php">DAFTAR MENU</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="contact.html">CONTACT</a>
+                            <a class="nav-link " href="contact.php">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -74,24 +74,27 @@
             <a href="profile.html" class="btn btn-outline-light home-btn">Profile</a>
         </div>
 
-        <!-- VISI MISI -->
+        <!-- SEJARAH -->
         <div id="visi-misi" class="container mt-5">
             <div class="row">
                 <div class="col-sm-6">
-                    <h1 class="visi-misi-title">Visi & Misi<br>Mbah Kakung</h1>
-                    <h4 class="visi-title">Visi:</h4>
-                    <p>Visi dari mbah kakung sendiri, ingin memiliki outlet atau cabang sebanyak-banyaknya, khususnya untuk di daerah jawa terlebih dahulu.</p>
-                    <h4 class="misi-title">Misi:</h4>
-                    <p>Dengan banyaknya outlet yang kita buka, kita membuat lowongan pekerjaan untuk orang lain yang membutuhkan.</p>
+                    <h1 class="visi-misi-title py-4">Sejarah<br>Mbah Kakung</h1><br>
+                    <h5 class="desc-sejarah" align="justify">
+                        Asal mula Mbah Kakung ini adalah, pertama kali didirikan
+                        untuk mengenang Almarhum dari Bapak Owner sendiri. Kemudian,
+                        termotivasi dalam merintis sebuah tempat makan, yang murah dan
+                        memiliki cita rasa identik dengan jogja. Kemudian, kita buat
+                        menu paket dan merelease slogan yaitu <h4 class="visi-title">Mantab, Murah, Kenyang dan Puas</h4> 
+                    </h5>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 py-4">
                     <img src="image/chvmresized.jpg" class="visi-misi-image" alt="">
                 </div>
             </div>
         </div>
         <!-- Fasilitas Mbah Kakung -->
         <div id="fasilitas-mbah" class="container mt-5">
-          <h1 class="fasilitas-mbah-title">Fasilitas Mbah Kakung</h1>
+          <h1 class="fasilitas-mbah-title py-4">Fasilitas Mbah Kakung</h1>
         </div>
         <div class="container mt-5">
           <div class="row">
@@ -108,21 +111,26 @@
               <p class="nama-fasilitas">Mini Bar Coffee</p>
             </div>
           </div>
-          <div id="fasilitas-lainnya-akhir">
-            <h1 class="fasilitas-lainnya">Fasilitas Lainnya:</h1>
+          <div id="fasilitas-lainnya-akhir" class="container mt-5">
+            <h1 class="fasilitas-lainnya py-4">Fasilitas Lainnya:</h1>
             <ul id="list-fasilitas-lainnya">
               <li>Kamar Mandi</li>
               <li>Mushola</li>
+              <li>Free Wifi</li>
+              <li>Music</li>
             </ul>
           </div>
         </div>
 
     </main>
-
-    <footer>
-        <p>&copy; Mbah Kakung, All Right Reserved 2022</p>
-    </footer>
     
+    <footer class="footer">
+        <div class="container text-center py-3">
+            <span class="text-muted">&copy; Mbah Kakung, All Right Reserved 2022</span>
+        </div>
+    </footer>
+
+
     <!-- BOOTSTRAP BUNDLE JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     

@@ -179,8 +179,8 @@ body {
 
 .judul-profile{
     color: #ffa825;
-    font-weight: 700;
-    padding-bottom: 2em;
+    font-weight: 900;
+    padding-bottom: 1em;
 }
 
 .profile-text{
@@ -263,7 +263,7 @@ body {
 
 
 /* FOOTER */
-footer p {
+/* footer p {
     position: fixed;
     text-align: center;
     color: #ffa825;
@@ -274,7 +274,12 @@ footer p {
 
 #footer-profile{
     padding-top: 5em;
-}
+} */
+
+/* .footer-copyright{
+    color: #ffa825;
+    font-weight: 700;
+} */
 
 .grid-container{
     display: grid;
