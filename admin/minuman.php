@@ -108,7 +108,7 @@ $minuman = mysqli_query($connection,"Select * FROM beverages");
               <?php foreach ($minuman as $baris) : ?>
                 <tr>
                   <td><?= $i; ?></td>
-                  <td><img src="../image/<?= $baris["picture"];?>" alt=""></td>
+                  <td><img src="../image/<?= $baris["picture"];?>" alt="" width="300px"></td>
                   <td><?= $baris["name"];?> </td>
                   <td><?= $baris["price"];?> </td>
                   <td><?= $baris["description"];?> </td>
