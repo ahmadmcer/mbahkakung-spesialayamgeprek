@@ -40,6 +40,9 @@ $minuman = mysqli_query($connection,"Select * FROM beverages");
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
+        <a href="tambahminuman.php">  
+          <button type="button" class="btn btn-block bg-gradient-warning">Tambah Minuman</button>
+        </a>
         <div class="card-body table-responsive p-0">
           <table class="table table-hover text-nowrap">
             <thead>
@@ -70,9 +73,6 @@ $minuman = mysqli_query($connection,"Select * FROM beverages");
               <?php endforeach; ?>
             </tbody>
           </table>
-            <a href="tambahminuman.php">  
-              <button type="button" class="btn btn-block bg-gradient-warning">Tambah Minuman</button>
-            </a>
         </div>
       </div><!-- /.container-fluid -->
     </div> <!-- /.content -->

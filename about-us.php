@@ -88,8 +88,10 @@ $baris = mysqli_fetch_array($query);
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; Mbah Kakung, All Right Reserved 2022</p>
+    <footer class="footer">
+        <div class="container text-center py-3">
+            <span class="text-muted">&copy; Mbah Kakung, All Right Reserved 2022</span>
+        </div>
     </footer>
 
     <!-- BOOTSTRAP BUNDLE JS -->

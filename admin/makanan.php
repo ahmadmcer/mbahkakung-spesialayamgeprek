@@ -41,6 +41,9 @@ $makanan = mysqli_query($connection, "Select * FROM food");
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
+          <a href="tambahmakanan.php">  
+            <button type="button" class="btn btn-block bg-gradient-warning">Tambah Makanan</button>
+          </a>
       <div class="card-body table-responsive p-0">
           <table class="table table-hover text-nowrap">
             <thead>
@@ -71,9 +74,6 @@ $makanan = mysqli_query($connection, "Select * FROM food");
               <?php endforeach; ?>
             </tbody>
           </table>
-            <a href="tambahmakanan.php">  
-              <button type="button" class="btn btn-block bg-gradient-warning">Tambah Makanan</button>
-            </a>
         </div>
       </div><!-- /.container-fluid -->
     </div> <!-- /.content -->
