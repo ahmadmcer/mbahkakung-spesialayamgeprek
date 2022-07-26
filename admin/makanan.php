@@ -1,4 +1,5 @@
 <?php
+require 'accountcheck.php';
 require 'config.php';
 $makanan = mysqli_query($connection, "Select * FROM food");
 ?>

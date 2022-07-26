@@ -1,5 +1,6 @@
 <?php
-require ('config.php');
+require 'accountcheck.php';
+require 'config.php';
 $minuman = mysqli_query($connection,"Select * FROM beverages");
 ?>
 <!DOCTYPE html>
