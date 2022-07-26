@@ -1,8 +1,8 @@
 <?php
 require 'accountcheck.php';
 include('config.php');
-$id = $_GET['id'];
-$query = mysqli_query($connection, "SELECT * FROM food WHERE id ='$id'");
+$id = 1;
+$query = mysqli_query($connection, "SELECT * FROM fasilitas WHERE id ='$id'");
 $baris = mysqli_fetch_array($query);
 ?>
 <!DOCTYPE html>
@@ -32,39 +32,34 @@ $baris = mysqli_fetch_array($query);
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Ubah Makanan</h1>
+            <h1 class="m-0">Ubah Fasilitas</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content-header -->
+    <!-- /.content-header -->   
 
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-      <form action="ubahmakanan.php" method="post" enctype="multipart/form-data">
-        <input type="hidden" value="<?php echo $baris['id'];?>" name="id">
+      <form action="ubahfasilitas.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label>Nama Makanan</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukkan Nama Makanan" value="<?php echo $baris['name'];?>">
+                <label>Fasilitas</label>
+                <textarea type="text" class="form-control" rows="3" name="fasilitas" placeholder="Masukkan Keterangan Fasilitas"><?php echo $baris['fasilitas'];?></textarea>
             </div>
             <div class="form-group">
-                <label>Harga</label>
-                <input type="number" class="form-control" name="price" placeholder="Masukkan Harga" value="<?php echo $baris['price'];?>">
+                <label>Fasilitas2</label>
+                <textarea type="text" class="form-control" rows="3" name="fasilitas2" placeholder="Masukkan Keterangan Fasilitas"><?php echo $baris['fasilitas2'];?></textarea>
             </div>
             <div class="form-group">
-                <label>Keterangan</label>
-                <textarea type="text" class="form-control" rows="3" name="description" placeholder="Masukkan Keterangan Makanan"><?php echo $baris['description'];?></textarea>
+                <label>Fasilitas3</label>
+                <textarea type="text" class="form-control" rows="3" name="fasilitas3" placeholder="Masukkan Keterangan Fasilitas"><?php echo $baris['fasilitas3'];?></textarea>
             </div>
             <div class="form-group">
-              <label for="exampleInputFile">File input</label>
-                <div class="input-group">
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" name="picture" id="exampleInputFile">
-                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                  </div>
-                </div>
+                <label>Fasilitas4</label>
+                <textarea type="text" class="form-control" rows="3" name="fasilitas4" placeholder="Masukkan Keterangan Fasilitas"><?php echo $baris['fasilitas4'];?></textarea>
             </div>
+        
             <div>
                 <button type="submit" name="Submit" value="edit" class="btn btn-primary">Submit</button>
             </div>
@@ -79,22 +74,17 @@ $baris = mysqli_fetch_array($query);
     // include_once("config.php");
     // Check If form submitted, insert form data into users table.
     if(isset($_POST['Submit'])) {
-        $id = $_POST['id'];
-        $picture = $_FILES['picture']['name'];
-        $tmp_name = $_FILES['picture']['tmp_name'];
-        $path = "../image/".$picture;
-        move_uploaded_file($tmp_name, $path);
-        $name = $_POST['name'];
-        $price = $_POST['price'];
-        $description = $_POST['description'];
-        $query = mysqli_query($connection, "SELECT * FROM food WHERE id='$id'");
-	      $baris = mysqli_fetch_array($query);
+        $id = 1;
+        $fasilitas = $_POST['fasilitas'];
+        $fasilitas2 = $_POST['fasilitas2'];
+        $fasilitas3 = $_POST['fasilitas3'];
+        $fasilitas4 = $_POST['fasilitas4'];
     
         // Insert user data into table
-        $result = mysqli_query($connection, "UPDATE food SET picture='$picture', name='$name', price='$price', description='$description' WHERE id=$id");
+        $result = mysqli_query($connection, "UPDATE fasilitas SET fasilitas='$fasilitas', fasilitas2='$fasilitas2', fasilitas3='$fasilitas3',fasilitas4='$fasilitas4'  WHERE id=$id");
 
         // memberikan allert
-        echo "<script>window.location.href='makanan.php'</script>";
+        echo "<script>window.location.href='ubahfasilitas.php'</script>";
       } 
     ?>
 

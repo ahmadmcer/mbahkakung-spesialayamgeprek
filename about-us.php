@@ -1,3 +1,9 @@
+<?php
+include('admin/config.php');
+$id = 1;
+$query = mysqli_query($connection, "SELECT * FROM about_us WHERE id = '$id'");
+$baris = mysqli_fetch_array($query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,26 +72,15 @@
         </div>
 
         <!-- Tentang Mbah Kakung -->
-        <div id="tentang-mbah" class="container mt-5 py-4">
+        <div id="tentang-mbah" class="container mt-5">
             <div class="row">
                 <h1 class="tentang-mbah-title">Tentang Mbah Kakung</h1>
                 <div class="col-sm-6">
-                        <p class="tentang-mbah-text">Warung Makan Mbah Kakung merupakan salah satu UMKN 
-                        yang terletak di Kota Purwokerto, tepatnya di Jl. Jend. Sudirman, 
-                        dan dimiliki oleh Bapak Sumarno. Nama Mbah Kakung tersebut 
-                        digunakan oleh sang pemilik untuk mengenang mendiang Kakek 
-                        dari Pak Sumarno.</p>
+                        <p class="tentang-mbah-text"><?php echo $baris['tentang']; ?> </p>
                     <h1 class="tentang-mbah-title">Sejarah Logo Mbah Kakung:</h1>
-                        <p class="tentang-mbah-text">Dalam Proses pembuatan Logo Bapak Sumarno tidak tanggung - tanggung 
-                        dalam melakukannya, pembuatan logo dilakukan bersama salah satu teman 
-                        Pak Sumarno. Meskipun pada saat itu Pak sumarno beserta salah satu 
-                        temannya terkendala akan waktu dan kondisi yang mana istrinya sedang 
-                        dalam keadaan mengandung 9 bulan meskipun terkendala oleh 
-                        beberapa hal tersebut, design logo warung makan Mbah Kakung berhasil 
-                        dibuat dalam kurun waktu 24 jam dengan harapan bahwa logo tersebut 
-                        berbeda dengan yang lain serta memiliki makna tersendiri.</p>
+                        <p class="tentang-mbah-text"><?php echo $baris['sejarah']; ?>.</p>
                 </div>
-                <div class="col-sm-6 py-4">
+                <div class="col-sm-6">
                     <img src="image/logo.png" class="tentang-mbah-image" alt="">
                 </div>
             </div>
@@ -93,10 +88,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container text-center py-3">
-            <span class="text-muted">&copy; Mbah Kakung, All Right Reserved 2022</span>
-        </div>
+    <footer>
+        <p>&copy; Mbah Kakung, All Right Reserved 2022</p>
     </footer>
 
     <!-- BOOTSTRAP BUNDLE JS -->

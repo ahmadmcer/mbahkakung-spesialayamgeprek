@@ -1,6 +1,5 @@
 <?php
 $name = $_SESSION['name'];
-
 $actual_link = "$_SERVER[REQUEST_URI]";
 $page_name = substr($actual_link, 36);
 ?>
@@ -24,13 +23,12 @@ $page_name = substr($actual_link, 36);
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <!-- Add icons to the links using the .nav-icon class
-              with font-awesome or any other icon font library -->
-              <li class="nav-item menu-open">
+        <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+        <!-- ini halaman Daftar Menu -->
+        <li class="nav-item menu-open">
           <a href="#" class="nav-link active">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
-              Halaman
+              Halaman Menu
               <i class="right fas fa-angle-left"></i>
             </p>
           </a>
@@ -52,9 +50,63 @@ $page_name = substr($actual_link, 36);
             </li>
           </ul>
         </li>
-      </ul>
-    </nav>
+        <!-- ini halaman Company Profile -->
+        <li class="nav-item">
+          <a href="#" class="nav-link active">
+            <p>
+              Halaman Depan
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+          <li class="nav-item ">
+              <a href="#" class="nav-link <?php echo ($page_name == "#") ?: "";?>">
+                <p>Sejarah dan Fasilitas</p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="ubahsejarah.php" class="nav-link <?php echo ($page_name == "ubahsejarah.php") ? "active" : "";?>">
+                    <p>Ubah isi Sejarah</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="ubahfasilitas.php" class="nav-link <?php echo ($page_name == "ubahfasilitas.php") ? "active" : "";?>">
+                    <p>Ubah isi Fasilitas</p>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link <?php echo ($page_name == "#") ? "active" : "";?>">
+                <p>Tentang Kami</p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="ubahaboutus.php" class="nav-link <?php echo ($page_name == "ubahaboutus.php") ? "active" : "";?>">
+                    <p>Ubah isi Tentang Kami</p>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link <?php echo ($page_name == "#") ? "active" : "";?>">
+                <p>Profile</p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="ubahprofile.php" class="nav-link <?php echo ($page_name == "ubahrprofile.php") ? "active" : "";?>">
+                    <p>Ubah isi Profile</p>
+                  </a>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
     <!-- /.sidebar-menu -->
+    
+
   </div>
   <!-- /.sidebar -->
 </aside>

@@ -1,8 +1,8 @@
 <?php
 require 'accountcheck.php';
 include('config.php');
-$id = $_GET['id'];
-$query = mysqli_query($connection, "SELECT * FROM food WHERE id ='$id'");
+$id = 1;
+$query = mysqli_query($connection, "SELECT * FROM sejarah WHERE id ='$id'");
 $baris = mysqli_fetch_array($query);
 ?>
 <!DOCTYPE html>
@@ -32,7 +32,7 @@ $baris = mysqli_fetch_array($query);
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Ubah Makanan</h1>
+            <h1 class="m-0">Ubah  Sejarah</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -42,29 +42,14 @@ $baris = mysqli_fetch_array($query);
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-      <form action="ubahmakanan.php" method="post" enctype="multipart/form-data">
-        <input type="hidden" value="<?php echo $baris['id'];?>" name="id">
+      <form action="ubahsejarah.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label>Nama Makanan</label>
-                <input type="text" class="form-control" name="name" placeholder="Masukkan Nama Makanan" value="<?php echo $baris['name'];?>">
+                <label>sejarah</label>
+                <textarea type="text" class="form-control" rows="3" name="sejarah" placeholder="Masukkan Keterangan sejarah"><?php echo $baris['sejarah'];?></textarea>
             </div>
-            <div class="form-group">
-                <label>Harga</label>
-                <input type="number" class="form-control" name="price" placeholder="Masukkan Harga" value="<?php echo $baris['price'];?>">
-            </div>
-            <div class="form-group">
-                <label>Keterangan</label>
-                <textarea type="text" class="form-control" rows="3" name="description" placeholder="Masukkan Keterangan Makanan"><?php echo $baris['description'];?></textarea>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputFile">File input</label>
-                <div class="input-group">
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" name="picture" id="exampleInputFile">
-                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                  </div>
-                </div>
-            </div>
+            
+            
+
             <div>
                 <button type="submit" name="Submit" value="edit" class="btn btn-primary">Submit</button>
             </div>
@@ -79,22 +64,14 @@ $baris = mysqli_fetch_array($query);
     // include_once("config.php");
     // Check If form submitted, insert form data into users table.
     if(isset($_POST['Submit'])) {
-        $id = $_POST['id'];
-        $picture = $_FILES['picture']['name'];
-        $tmp_name = $_FILES['picture']['tmp_name'];
-        $path = "../image/".$picture;
-        move_uploaded_file($tmp_name, $path);
-        $name = $_POST['name'];
-        $price = $_POST['price'];
-        $description = $_POST['description'];
-        $query = mysqli_query($connection, "SELECT * FROM food WHERE id='$id'");
-	      $baris = mysqli_fetch_array($query);
+        $id = 1;
+        $sejarah = $_POST['sejarah'];
     
         // Insert user data into table
-        $result = mysqli_query($connection, "UPDATE food SET picture='$picture', name='$name', price='$price', description='$description' WHERE id=$id");
+        $result = mysqli_query($connection, "UPDATE sejarah SET sejarah='$sejarah' WHERE id=$id");
 
         // memberikan allert
-        echo "<script>window.location.href='makanan.php'</script>";
+        echo "<script>window.location.href='ubahsejarah.php'</script>";
       } 
     ?>
 

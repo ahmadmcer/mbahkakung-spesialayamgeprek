@@ -42,19 +42,19 @@ $makanan = mysqli_query($connection, "Select * FROM food");
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link"  href="index.html">HOME</a>
+                            <a class="nav-link"  href="index.php">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">ABOUT US</a>
+                            <a class="nav-link" href="about-us.php">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="profile.html">PROFILE</a>
+                            <a class="nav-link" href="profile.php">PROFILE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="menu.php">DAFTAR MENU</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="contact.html">CONTACT</a>
+                            <a class="nav-link " href="contact.php">CONTACT</a>
                         </li>
                     </ul>
                 </div>

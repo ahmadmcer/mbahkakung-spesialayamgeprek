@@ -1,3 +1,11 @@
+<?php
+include('admin/config.php');
+$id = 1;
+$queryvm = mysqli_query($connection, "SELECT * FROM sejarah WHERE id ='$id'");
+$queryfs = mysqli_query($connection, "SELECT * FROM fasilitas WHERE id ='$id'");
+$barisvm = mysqli_fetch_array($queryvm);
+$barisfs = mysqli_fetch_array($queryfs);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,12 +89,10 @@
                     <h1 class="visi-misi-title py-4">Sejarah<br>Mbah Kakung</h1><br>
                     <div class="desc-sejarah">
                         <h5 align="justify">
-                            Asal mula Mbah Kakung ini adalah, pertama kali didirikan
-                            untuk mengenang Almarhum dari Bapak Owner sendiri. Kemudian,
-                            termotivasi dalam merintis sebuah tempat makan, yang murah dan
-                            memiliki cita rasa identik dengan jogja. Kemudian, kita buat
-                            menu paket dan merelease slogan yaitu :
-                            <h5 class="visi-title">"Mantab, Murah, Kenyang dan Puas"</h4> 
+
+                            <p class="desc"><?php echo $barisvm['sejarah'] ?></p>
+
+                            <h5 class="visi-title">"Mantab, Murah, Kenyang dan Puas"</h5> 
                         </h5>
                     </div>
                 </div>
@@ -117,10 +123,10 @@
           <div id="fasilitas-lainnya-akhir" class="container mt-5">
             <h1 class="fasilitas-lainnya py-4">Fasilitas Lainnya:</h1>
             <ul id="list-fasilitas-lainnya">
-              <li>Kamar Mandi</li>
-              <li>Mushola</li>
-              <li>Free Wifi</li>
-              <li>Music</li>
+              <li><?php echo $barisfs['fasilitas'] ?></li>
+              <li><?php echo $barisfs['fasilitas2'] ?></li>
+              <li><?php echo $barisfs['fasilitas3'] ?></li>
+              <li><?php echo $barisfs['fasilitas4'] ?></li>
             </ul>
           </div>
         </div>
