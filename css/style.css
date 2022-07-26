@@ -192,13 +192,16 @@ body {
 .profile-text{
     color: #ffa825;
     font-size: x-large;
+    padding-right: 70px;
 }
 
 .owner-image{
-    width: 70%;
+    width: 120%;
     border-radius: 32px;
-    text-align: right;
-    margin-left: 15em;
+    /* text-align: right; */
+    margin-right: 15em;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 /* Daftar Makanan */
@@ -228,7 +231,7 @@ body {
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     background-image: url("../image/kasir.jpg");
     background-size: 100%;
-    padding: 10% 0;
+    padding: 15% 0;
     margin: auto;
 }
 
@@ -244,8 +247,28 @@ body {
     font-weight: 600;
 }
 
+.partner-title h3{
+    color: #fff511;
+    font-size: 64pt;
+    font-weight: 600;
+}
+
 #grabfood{
     padding-bottom: 2em;
+    width: 340px;
+    padding-right: 70px;
+}
+
+#gofood {
+    padding-bottom: 2em;
+    width: 420px;
+    padding-right: 30px;
+}
+
+#shopeefood {
+    padding-bottom: 2em;
+    width: 390px;
+    padding-right: 40px;
 }
 
 #embed-map{
@@ -265,6 +288,7 @@ body {
 .list-contact-content{
     color: #ffa825;
     font-size: large;
+    padding-right: 80px;
 }
 
 

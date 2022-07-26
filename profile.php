@@ -68,7 +68,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p class="profile-text">Owner : Sumarno / Pak Nung</p>
+                        <p class="profile-text py-3">Owner : Sumarno / Pak Nung</p>
                         <p class="profile-text" align="justify">
                             Beliau ini, membuat mbah kakung, dengan motivasi
                             yang cukup besar, dengan memiliki basic dibidang
@@ -78,15 +78,10 @@
                         <ul class="profile-text">
                             <li>Barista</li>
                             <li>Kitchen</li>
-                            <li>etc</li>
+                            <li>etc</li><br>
                         </ul>
-                    </div>
-                    <div class="col">
-                        <img src="image/owner.jpeg" class="owner-image" alt="">
-                    </div>
-                </div>
-                    <div class="col">
-                        <p class="profile-text">Visi & Misi Mbah Kakung</p>
+                        <div class="col">
+                        <h3 class="judul-profile">Visi & Misi Mbah Kakung</h3>
                         <p class="profile-text" align="justify">Visi : <br>
                             Visi dari mbah kakung itu sendiri adalah, kita ingin mempunyai
                             outlet, sebanyak mungkin dan juga difokuskan pertama kali adalah
@@ -98,6 +93,11 @@
                             barista, dan lain-lain. Untuk orang yang membutuhkan.
                         </p>
                     </div>
+                    </div>
+                    <div class="col">
+                        <img src="image/owner.jpeg" class="owner-image py-2" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </main>

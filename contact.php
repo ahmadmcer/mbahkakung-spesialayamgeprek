@@ -65,20 +65,24 @@
             <h3 class="contact-subtitle">Sudah Tersedia Online</h3>
                 <div id="link-contact" class="container mt-5">
                     <div class="row">
-                        <div class="col"> 
+                        <div class="col py-4"> 
                             <a href="https://wa.me/6281548299669">
                                 <img id="contact-wa" src="image/wa.png" alt="https://wa.me/6281548299669"></a>       
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <a href="https://gofood.link/u/bBZg">
-                                <img id="gofood" src="image/gofood.png" alt="" ></a>
-                            <a href="https://food.grab.com/id/id/restaurant/ayam-geprek-mbah-kakung-purwokerto-wetan-delivery/IDGFSTI0000385l">
-                                <img id="grabfood" src="image/grabfood.png" alt=""></a>
-                            <a href="https://shopee.co.id/universal-link/now-food/shop/20237285?deep_and_deferred=1&share">
-                                <img src="image/spfood.png" alt=""></a>
-                    </div>
+                </div>
+            </div>
+            <h4 class="contact-title py-4" align="center">Partner!</h1>
+            <div class="row">
+                <div class="col">
+                    <center>
+                        <a href="https://gofood.link/u/bBZg">
+                            <img id="gofood" src="image/gofood.png" alt="" ></a>
+                        <a href="https://food.grab.com/id/id/restaurant/ayam-geprek-mbah-kakung-purwokerto-wetan-delivery/IDGFSTI0000385l">
+                            <img id="grabfood" src="image/grabfood.png" alt=""></a>
+                        <a href="https://shopee.co.id/universal-link/now-food/shop/20237285?deep_and_deferred=1&share">
+                            <img id="shopeefood" src="image/spfood.png" alt=""></a>
+                    </center>
                 </div>
             </div>
         </div>
@@ -93,13 +97,13 @@
         <div id="keterangan-contact" class="container">
             <div class="row align-items-start">
               <div class="col">
-                <h2 class="list-contact">Kontak</h2>
+                <h2 class="list-contact py-4">Kontak</h2>
               </div>
               <div class="col">
-                <h2 class="list-contact">Alamat</h2>
+                <h2 class="list-contact py-4">Alamat</h2>
               </div>
               <div class="col">
-                <h2 class="list-contact">Jam Buka</h2>
+                <h2 class="list-contact px-4 py-4">Jam Buka</h2>
               </div>
             </div>
             <div class="row align-items-top">
@@ -107,10 +111,10 @@
                 <p class="list-contact-content">0815-4829-9669</p>
               </div>
               <div class="col">
-                <p class="list-contact-content">Jl. Jend. Sudirman, Purwokerto Wetan, Kec. Purwokerto Timur, Kabupaten Banyumas, Jawa Tengah</p>
+                <p class="list-contact-content" align="justify">Jl. Jend. Sudirman, Purwokerto Wetan, Kec. Purwokerto Timur, Kabupaten Banyumas, Jawa Tengah</p>
               </div>
               <div class="col">
-                <p class="list-contact-content">Senin 09.00–22.30 <br>
+                <p class="list-contact-content px-4">Senin 09.00–22.30 <br>
                     Selasa 09.00–22.30 <br>
                     Rabu 09.00–22.30 <br>
                     Kamis 09.00–22.30 <br>

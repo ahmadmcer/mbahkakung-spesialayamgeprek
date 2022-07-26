@@ -66,7 +66,7 @@
         </div>
 
         <!-- Tentang Mbah Kakung -->
-        <div id="tentang-mbah" class="container mt-5">
+        <div id="tentang-mbah" class="container mt-5 py-4">
             <div class="row">
                 <h1 class="tentang-mbah-title">Tentang Mbah Kakung</h1>
                 <div class="col-sm-6">
@@ -85,7 +85,7 @@
                         dibuat dalam kurun waktu 24 jam dengan harapan bahwa logo tersebut 
                         berbeda dengan yang lain serta memiliki makna tersendiri.</p>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 py-4">
                     <img src="image/logo.png" class="tentang-mbah-image" alt="">
                 </div>
             </div>
