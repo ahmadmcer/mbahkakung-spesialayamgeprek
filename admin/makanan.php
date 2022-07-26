@@ -58,12 +58,12 @@ $makanan = mysqli_query($connection, "Select * FROM food");
               <?php foreach ($makanan as $baris) : ?>
                 <tr>
                   <td><?= $i; ?></td>
-                  <td><img src="../image/<?= $baris["picture"];?>" alt="" width="100px"></td>
+                  <td><img src="../image/<?= $baris["picture"];?>" alt="" width="100px" style="border-radius: 20px"></td>
                   <td><?= $baris["name"];?> </td>
                   <td><?= $baris["price"];?> </td>
                   <td><?= $baris["description"];?> </td>
                   <td>
-                    <a href="ubahmakanan.php?id=<?php echo$baris["id"];?>"><button type="button" class="btn btn-block btn-info btn-sm">Ubah</button></a>
+                    <a href="ubahmakanan.php?id=<?php echo$baris["id"];?>"><button type="button" class="btn btn-block btn-info btn-sm">Ubah</button></a><br>
                     <a href="hapusmakanan.php?id=<?php echo$baris["id"];?>"><button type="button" class="btn btn-block btn-outline-danger btn-sm">Hapus</button></a>
                   </td>   
                 </tr>
